@@ -1,0 +1,10 @@
+export { Hero } from './Hero';
+export { Services } from './Services';
+export { Projects } from './Projects';
+export { About } from './About';
+export { Differentiators } from './Differentiators';
+export { HowItWorks } from './HowItWorks';
+export { Gallery } from './Gallery';
+export { Blogs } from './Blogs';
+export { FAQ } from './FAQ';
+export { FloatingContact } from './FloatingContact';

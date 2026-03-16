@@ -1,0 +1,27 @@
+/* ── Color Tokens ─────────────────────────────── */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-alt: #fafafa;
+  --color-bg-dark: #0a0a0a;
+
+  --color-text-primary: #171717;
+  --color-text-secondary: #525252;
+  --color-text-muted: #a3a3a3;
+  --color-text-inverse: #ffffff;
+
+  --color-border: #e5e5e5;
+  --color-border-strong: #171717;
+
+  --color-accent: #171717;
+  --color-accent-hover: #404040;
+
+  /* ── Font Tokens ─────────────────────────────── */
+  --font-primary: 'Inter', 'Geist', sans-serif;
+  --font-mono: 'Fragment Mono', 'Geist Mono', monospace;
+  --font-handwriting: 'Homemade Apple', cursive;
+
+  /* ── Spacing ─────────────────────────────────── */
+  --section-py: 6rem;
+  --container-px: 1.5rem;
+  --max-width: 80rem;
+}

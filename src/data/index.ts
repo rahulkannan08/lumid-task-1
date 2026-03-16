@@ -1,0 +1,10 @@
+export { navItems } from './nav';
+export { stats } from './stats';
+export { services } from './services';
+export { projects } from './projects';
+export { differences } from './differences';
+export { steps } from './steps';
+export { galleryImages, galleryStats } from './gallery';
+export { blogs } from './blogs';
+export { faqs } from './faqs';
+export { testimonials } from './testimonials';
