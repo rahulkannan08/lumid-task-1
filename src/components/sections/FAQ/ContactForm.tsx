@@ -17,14 +17,20 @@ export function ContactForm() {
     setForm({ name: '', phone: '', email: '', message: '' });
   };
 
+  const inputClasses =
+    'w-full bg-transparent border-0 border-b-[1.5px] border-[#ddd] px-0 py-2.5 text-sm text-[#111] placeholder-[#bbb] focus:border-[#F26227] focus:outline-none focus:ring-0 transition-colors duration-200';
+
+  const labelClasses =
+    'block text-[11px] font-medium text-[#888] uppercase tracking-[0.08em] mb-1';
+
   return (
     <motion.div variants={fadeInUp} className="space-y-6">
-      <p className="text-sm text-neutral-600">
+      <p className="text-sm text-[#666]">
         We&apos;re just a form away—send us your question, and we&apos;ll be happy to help!
       </p>
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-xs font-medium text-neutral-500 mb-1">
+          <label htmlFor="name" className={labelClasses}>
             NAME
           </label>
           <input
@@ -33,11 +39,11 @@ export function ContactForm() {
             type="text"
             value={form.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 text-sm border border-neutral-300 rounded-lg focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 outline-none transition-all"
+            className={inputClasses}
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-xs font-medium text-neutral-500 mb-1">
+          <label htmlFor="phone" className={labelClasses}>
             PHONE
           </label>
           <input
@@ -46,11 +52,11 @@ export function ContactForm() {
             type="tel"
             value={form.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 text-sm border border-neutral-300 rounded-lg focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 outline-none transition-all"
+            className={inputClasses}
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-xs font-medium text-neutral-500 mb-1">
+          <label htmlFor="email" className={labelClasses}>
             EMAIL
           </label>
           <input
@@ -59,11 +65,12 @@ export function ContactForm() {
             type="email"
             value={form.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 text-sm border border-neutral-300 rounded-lg focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 outline-none transition-all"
+            placeholder="Your email"
+            className={inputClasses}
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-xs font-medium text-neutral-500 mb-1">
+          <label htmlFor="message" className={labelClasses}>
             MESSAGE
           </label>
           <textarea
@@ -72,11 +79,12 @@ export function ContactForm() {
             rows={4}
             value={form.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 text-sm border border-neutral-300 rounded-lg focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 outline-none transition-all resize-none"
+            placeholder="Your message"
+            className={`${inputClasses} resize-none`}
           />
         </div>
         <Button type="submit" variant="primary">
-          Send Message
+          Send Message →
         </Button>
       </form>
     </motion.div>

@@ -15,23 +15,23 @@ export function Projects({ className }: SectionProps) {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} className={cn('py-24 bg-neutral-50', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <SectionLabel text="OUR BEST PROJECTS" />
+          <SectionLabel text="Our Best Projects" />
           <AnimatedHeading
             text="What we've been up to—check out our latest projects"
             as="h2"
             className="max-w-2xl mb-12"
           />
           <ProjectGrid projects={projects} />
-          <motion.div variants={fadeInUp} className="mt-10">
+          <motion.div variants={fadeInUp} className="mt-10 flex justify-center">
             <Button href="/projects" variant="outline">
-              View All Projects
+              View All Projects →
             </Button>
           </motion.div>
         </motion.div>

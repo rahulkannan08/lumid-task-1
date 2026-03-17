@@ -1,7 +1,6 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/cn';
 
 interface FAQItemProps {
@@ -13,22 +12,21 @@ interface FAQItemProps {
 
 export function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
   return (
-    <div className="border-b border-neutral-200">
+    <div className="border-b border-[#e5e0d8] cursor-pointer" onClick={onToggle}>
       <button
         type="button"
         className="flex w-full items-center justify-between py-5 text-left group"
-        onClick={onToggle}
         aria-expanded={isOpen}
       >
-        <span className="text-base font-medium text-neutral-900 pr-4">
+        <span className="text-[15px] font-medium text-[#111] pr-4">
           {question}
         </span>
         <motion.span
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.25 }}
-          className="shrink-0"
+          animate={{ rotate: isOpen ? 45 : 0 }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+          className="shrink-0 text-xl text-[#F26227] ml-4 select-none"
         >
-          <ChevronDown className="h-5 w-5 text-neutral-500" />
+          +
         </motion.span>
       </button>
       <AnimatePresence initial={false}>
@@ -40,7 +38,7 @@ export function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
             transition={{ duration: 0.35, ease: 'easeOut' }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-sm leading-relaxed text-neutral-600">
+            <p className="pb-5 text-sm leading-relaxed text-[#666]">
               {answer}
             </p>
           </motion.div>

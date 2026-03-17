@@ -21,7 +21,7 @@ export function FloatingContact() {
           >
             <Link
               href="mailto:email@gmail.com"
-              className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg border border-neutral-200 text-neutral-700 hover:bg-neutral-50 transition-colors"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg border border-[#e5e0d8] text-[#444] hover:text-[#F26227] hover:border-[#F26227] transition-colors"
               aria-label="Email us"
             >
               <Mail className="h-5 w-5" />
@@ -36,7 +36,7 @@ export function FloatingContact() {
             </Link>
             <Link
               href="tel:+1245678954"
-              className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg border border-neutral-200 text-neutral-700 hover:bg-neutral-50 transition-colors"
+              className="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow-lg border border-[#e5e0d8] text-[#444] hover:text-[#F26227] hover:border-[#F26227] transition-colors"
               aria-label="Call us"
             >
               <Phone className="h-5 w-5" />
@@ -48,7 +48,7 @@ export function FloatingContact() {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-center w-14 h-14 rounded-full bg-neutral-900 text-white shadow-xl hover:bg-neutral-800 transition-colors"
+        className="flex items-center justify-center w-14 h-14 rounded-full bg-[#F26227] text-white shadow-xl hover:bg-[#d9551f] transition-colors"
         aria-label={isOpen ? 'Close contact options' : 'Open contact options'}
       >
         <motion.div

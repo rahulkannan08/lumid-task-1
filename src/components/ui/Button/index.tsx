@@ -6,7 +6,7 @@ import { cn } from '@/lib/cn';
 interface ButtonProps {
   children: React.ReactNode;
   href?: string;
-  variant?: 'primary' | 'secondary' | 'outline';
+  variant?: 'primary' | 'secondary' | 'outline' | 'outline-accent' | 'text-arrow';
   className?: string;
   onClick?: () => void;
   type?: 'button' | 'submit';
@@ -21,13 +21,19 @@ export function Button({
   type = 'button',
 }: ButtonProps) {
   const base =
-    'inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 rounded-full';
+    'inline-flex items-center justify-center gap-2 font-medium transition-all duration-250 rounded-full text-sm cursor-pointer whitespace-nowrap';
 
   const variants = {
-    primary: 'bg-neutral-900 text-white px-6 py-3 hover:bg-neutral-800',
-    secondary: 'bg-white text-neutral-900 px-6 py-3 hover:bg-neutral-100',
+    primary:
+      'bg-[#111] text-white px-7 py-3 hover:bg-[#F26227] border border-transparent',
+    secondary:
+      'bg-[#FAF8F4] text-[#111] px-7 py-3 hover:bg-[#F26227] hover:text-white border border-transparent',
     outline:
-      'border border-neutral-300 text-neutral-900 px-6 py-3 hover:border-neutral-900',
+      'border-[1.5px] border-[#111] text-[#111] px-7 py-3 hover:bg-[#111] hover:text-white bg-transparent',
+    'outline-accent':
+      'border-[1.5px] border-[#F26227] text-[#F26227] px-7 py-3 hover:bg-[#F26227] hover:text-white bg-transparent',
+    'text-arrow':
+      'text-[#F26227] underline px-0 py-0 hover:tracking-wide bg-transparent border-none',
   };
 
   const classes = cn(base, variants[variant], className);

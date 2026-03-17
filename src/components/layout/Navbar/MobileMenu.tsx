@@ -20,13 +20,13 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
           animate={{ opacity: 1, height: 'auto' }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.35 }}
-          className="lg:hidden overflow-hidden bg-white border-t border-neutral-100"
+          className="lg:hidden overflow-hidden bg-[#FAF8F4] border-t border-[#e5e0d8]"
         >
           <nav className="container mx-auto px-6 py-6 space-y-4">
             {navItems.map((item) =>
               isNavDropdown(item) ? (
                 <div key={item.label} className="space-y-2">
-                  <p className="text-sm font-semibold text-neutral-900">
+                  <p className="text-sm font-medium text-[#111]">
                     {item.label}
                   </p>
                   {item.items.map((sub) => (
@@ -34,7 +34,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                       key={sub.href}
                       href={sub.href}
                       onClick={onClose}
-                      className="block pl-4 py-1 text-sm text-neutral-600 hover:text-neutral-900"
+                      className="block pl-4 py-1 text-sm text-[#666] hover:text-[#F26227]"
                     >
                       {sub.label}
                     </Link>
@@ -45,14 +45,14 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                   key={item.label}
                   href={item.href}
                   onClick={onClose}
-                  className="block text-sm font-medium text-neutral-700 hover:text-neutral-900"
+                  className="block text-sm font-medium text-[#333] hover:text-[#F26227]"
                 >
                   {item.label}
                 </Link>
               )
             )}
             <Button href="/contact-us" className="w-full mt-4">
-              Get in Touch
+              Get Template →
             </Button>
           </nav>
         </motion.div>

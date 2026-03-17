@@ -17,14 +17,14 @@ export function Blogs({ className }: SectionProps) {
   const rest = blogs.filter((b) => !b.featured);
 
   return (
-    <section ref={ref} className={cn('py-24 bg-white', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <SectionLabel text="BLOGS" />
+          <SectionLabel text="Blogs" />
           <AnimatedHeading
             text="No fluff, no jargon—just simple, practical advice for making your space look and feel amazing."
             as="h2"

@@ -17,14 +17,14 @@ export function TestimonialCard({
 }: TestimonialCardProps) {
   return (
     <div className={cn('space-y-4', className)}>
-      <p className="text-lg md:text-xl italic leading-relaxed text-neutral-700">
+      <p className="text-lg md:text-xl italic leading-relaxed text-[#444]">
         &ldquo;{quote}&rdquo;
       </p>
       <div>
-        <p className="text-sm font-semibold uppercase tracking-wide text-neutral-900">
+        <p className="text-sm font-medium uppercase tracking-wide text-[#111]">
           {author}
         </p>
-        <p className="text-sm text-neutral-500">{title}</p>
+        <p className="text-sm text-[#888]">{title}</p>
       </div>
     </div>
   );

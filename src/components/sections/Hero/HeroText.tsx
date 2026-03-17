@@ -11,19 +11,22 @@ export function HeroText() {
       <div className="space-y-6">
         <motion.h1
           variants={fadeInUp}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-neutral-900"
+          className="text-[clamp(40px,6vw,72px)] font-medium leading-[1.1] text-[#111]"
         >
           Architecture that connects people and places
         </motion.h1>
         <motion.p
           variants={fadeInUp}
-          className="text-lg text-neutral-600 max-w-lg"
+          className="text-base text-[#444] max-w-lg leading-relaxed"
         >
           We design more than buildings—we create spaces that foster connection,
           creativity, and community
         </motion.p>
         <motion.div variants={fadeInUp}>
-          <Button href="/contact-us">Get in Touch</Button>
+          <Button href="/contact-us">
+            Get Template
+            <span className="ml-1">→</span>
+          </Button>
         </motion.div>
       </div>
 

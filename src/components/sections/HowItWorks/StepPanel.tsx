@@ -24,18 +24,18 @@ export function StepPanel({ step }: StepPanelProps) {
         className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
       >
         <div className="space-y-4">
-          <p className="text-sm text-neutral-600 leading-relaxed">
+          <p className="text-sm text-[#666] leading-relaxed">
             {step.description}
           </p>
           <div className="flex items-center gap-3">
-            <span className="text-xs font-mono text-neutral-400 uppercase">
+            <span className="text-[11px] font-medium text-[#888] uppercase">
               STEP
             </span>
-            <span className="text-4xl font-bold text-neutral-900">
+            <span className="text-4xl font-semibold text-[#111]">
               {String(step.step).padStart(2, '0')}
             </span>
           </div>
-          <h3 className="text-2xl font-semibold text-neutral-900">
+          <h3 className="text-2xl font-medium text-[#111]">
             {step.title}
           </h3>
         </div>

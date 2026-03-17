@@ -14,7 +14,7 @@ export function About({ className }: SectionProps) {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} className={cn('py-24 bg-white', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
@@ -34,10 +34,10 @@ export function About({ className }: SectionProps) {
           </motion.div>
 
           <div className="space-y-6">
-            <motion.p variants={fadeInUp} className="text-sm text-neutral-500">
+            <motion.p variants={fadeInUp} className="text-sm text-[#888]">
               Take a glimpse into our world of creativity and innovation.
             </motion.p>
-            <motion.p variants={fadeInUp} className="text-base text-neutral-700 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-base text-[#444] leading-relaxed">
               Our journey began 15 years ago, with a simple idea: to design spaces that blend
               beauty and functionality seamlessly. What started as a small team with big
               dreams has grown into a thriving studio, known for turning ideas into reality.

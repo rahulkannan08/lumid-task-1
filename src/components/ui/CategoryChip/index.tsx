@@ -11,7 +11,7 @@ export function CategoryChip({ label, className }: CategoryChipProps) {
   return (
     <span
       className={cn(
-        'inline-block px-3 py-1 text-xs font-medium rounded-full bg-neutral-100 text-neutral-600',
+        'inline-block px-3 py-1 text-[11px] font-medium rounded bg-[#FFF0E8] text-[#C44209]',
         className
       )}
     >

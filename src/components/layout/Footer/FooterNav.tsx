@@ -16,7 +16,7 @@ const links = [
 export function FooterNav() {
   return (
     <div className="space-y-4">
-      <h4 className="text-sm font-semibold uppercase tracking-wider text-neutral-400">
+      <h4 className="text-sm font-medium uppercase tracking-wider text-white/50">
         Pages
       </h4>
       <ul className="space-y-2">
@@ -24,7 +24,7 @@ export function FooterNav() {
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-sm text-neutral-400 hover:text-white transition-colors duration-200"
+              className="text-sm text-white/50 hover:text-[#F26227] transition-colors duration-200"
             >
               {link.label}
             </Link>

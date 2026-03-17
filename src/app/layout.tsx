@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Geist } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingContact } from "@/components/sections/FloatingContact";
 
-const inter = Inter({
-  variable: "--font-inter",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -32,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${geist.variable} antialiased`}>
+      <body className={`${dmSans.variable} antialiased`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
         <Navbar />
         {children}
         <Footer />

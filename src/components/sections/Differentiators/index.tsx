@@ -17,14 +17,14 @@ export function Differentiators({ className }: SectionProps) {
   const { isOpen, toggle } = useAccordion(0);
 
   return (
-    <section ref={ref} className={cn('py-24 bg-neutral-50', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <SectionLabel text="OUR DIFFERENCES" />
+          <SectionLabel text="Our Differences" />
           <AnimatedHeading
             text="what makes us different (and totally awesome)"
             as="h2"

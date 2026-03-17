@@ -17,14 +17,14 @@ export function HowItWorks({ className }: SectionProps) {
   const { activeStep, goToStep } = useStepNav(steps.length);
 
   return (
-    <section ref={ref} className={cn('py-24 bg-white', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <SectionLabel text="HOW WE WORK" />
+          <SectionLabel text="How We Work" />
           <AnimatedHeading
             text="Let's turn your big ideas into a masterpiece with a clear and fun process"
             as="h2"
@@ -32,7 +32,7 @@ export function HowItWorks({ className }: SectionProps) {
           />
 
           {/* Step buttons */}
-          <div className="flex flex-wrap gap-3 mb-10 sticky top-20 z-10 bg-white py-4">
+          <div className="flex flex-wrap gap-3 mb-10 sticky top-20 z-10 bg-[#FAF8F4] py-4">
             {steps.map((step, i) => (
               <StepButton
                 key={step.step}

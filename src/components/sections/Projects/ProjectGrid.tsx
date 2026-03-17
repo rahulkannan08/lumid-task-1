@@ -13,10 +13,10 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
   return (
     <motion.div
       variants={stagger}
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      className="relative space-y-4"
     >
-      {projects.map((project) => (
-        <ProjectCard key={project.slug} project={project} />
+      {projects.map((project, i) => (
+        <ProjectCard key={project.slug} project={project} index={i} />
       ))}
     </motion.div>
   );

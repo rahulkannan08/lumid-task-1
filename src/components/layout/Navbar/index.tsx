@@ -21,12 +21,12 @@ export function Navbar() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm'
+          ? 'bg-white/85 backdrop-blur-xl shadow-[0_1px_0_rgba(0,0,0,0.06)]'
           : 'bg-transparent'
       )}
     >
       <nav className="container mx-auto flex items-center justify-between px-6 py-4 max-w-screen-xl">
-        <Link href="/" className="text-xl font-bold text-neutral-900">
+        <Link href="/" className="text-xl font-bold text-[#111]">
           Architectured
         </Link>
 
@@ -42,7 +42,7 @@ export function Navbar() {
               >
                 <button
                   type="button"
-                  className="flex items-center gap-1 text-sm font-medium text-neutral-700 hover:text-neutral-900 transition-colors"
+                  className="flex items-center gap-1 text-sm font-medium text-[#333] hover:text-[#F26227] transition-colors duration-200"
                 >
                   {item.label}
                   <ChevronDown className="h-4 w-4" />
@@ -54,25 +54,25 @@ export function Navbar() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 8 }}
                       transition={{ duration: 0.25 }}
-                      className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-lg border border-neutral-100 p-2"
+                      className="absolute top-full left-0 mt-2 w-72 bg-white rounded-xl shadow-lg border border-[rgba(0,0,0,0.08)] p-2"
                     >
                       {item.items.map((sub) => (
                         <Link
                           key={sub.href}
                           href={sub.href}
-                          className="group flex items-center justify-between p-3 rounded-lg hover:bg-neutral-50 transition-colors"
+                          className="group flex items-center justify-between p-3 rounded-lg hover:bg-[#FAF8F4] transition-colors"
                         >
                           <div>
-                            <p className="text-sm font-medium text-neutral-900">
+                            <p className="text-sm font-medium text-[#111]">
                               {sub.label}
                             </p>
                             {sub.description && (
-                              <p className="text-xs text-neutral-500 mt-0.5">
+                              <p className="text-xs text-[#888] mt-0.5">
                                 {sub.description}
                               </p>
                             )}
                           </div>
-                          <ArrowRight className="h-4 w-4 text-neutral-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
+                          <ArrowRight className="h-4 w-4 text-[#F26227] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" />
                         </Link>
                       ))}
                     </motion.div>
@@ -83,7 +83,7 @@ export function Navbar() {
               <li key={item.label}>
                 <Link
                   href={item.href}
-                  className="text-sm font-medium text-neutral-700 hover:text-neutral-900 transition-colors"
+                  className="text-sm font-medium text-[#333] hover:text-[#F26227] transition-colors duration-200"
                 >
                   {item.label}
                 </Link>
@@ -94,7 +94,8 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button href="/contact-us" variant="primary">
-            Get in Touch
+            Get Template
+            <span className="ml-1">→</span>
           </Button>
         </div>
 

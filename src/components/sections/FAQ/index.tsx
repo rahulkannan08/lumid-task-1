@@ -17,14 +17,14 @@ export function FAQ({ className }: SectionProps) {
   const { isOpen, toggle } = useAccordion();
 
   return (
-    <section ref={ref} className={cn('py-24 bg-white', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
         >
-          <SectionLabel text="FAQS" />
+          <SectionLabel text="FAQs" />
           <AnimatedHeading
             text="We've answered the big questions, but if you still have something on your mind, we're here to help."
             as="h2"

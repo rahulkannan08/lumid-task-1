@@ -15,7 +15,7 @@ export function Gallery({ className }: SectionProps) {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section ref={ref} className={cn('py-24 bg-neutral-50', className)}>
+    <section ref={ref} className={cn('py-24 bg-[#FAF8F4]', className)}>
       <div className="container mx-auto px-6 max-w-7xl">
         <motion.div
           variants={stagger}
@@ -24,12 +24,12 @@ export function Gallery({ className }: SectionProps) {
         >
           <div className="flex items-start justify-between mb-4">
             <motion.div variants={fadeInUp}>
-              <span className="text-4xl font-bold text-neutral-900">
+              <span className="text-4xl font-semibold text-[#111]">
                 {galleryStats.count}
               </span>
-              <p className="text-sm text-neutral-500">{galleryStats.label}</p>
+              <p className="text-sm text-[#888]">{galleryStats.label}</p>
             </motion.div>
-            <SectionLabel text="GALLERY" />
+            <SectionLabel text="Gallery" />
           </div>
 
           <AnimatedHeading
@@ -38,22 +38,33 @@ export function Gallery({ className }: SectionProps) {
             className="max-w-3xl mb-12"
           />
 
+          {/* Bento grid: large image left spanning 2 rows, 2 small images right */}
           <motion.div
             variants={stagger}
-            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            className="grid grid-cols-1 md:grid-cols-2 gap-2.5"
+            style={{ gridTemplateRows: '240px 240px' }}
           >
-            {galleryImages.map((img) => (
+            {galleryImages.map((img, i) => (
               <motion.div
                 key={img.alt}
                 variants={scaleIn}
-                className="relative aspect-square rounded-xl overflow-hidden"
+                className={cn(
+                  'relative rounded-2xl overflow-hidden group',
+                  i === 0 && 'md:row-span-2'
+                )}
               >
                 <Image
                   src={img.src}
                   alt={img.alt}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                 />
+                {/* Badge overlay on first image */}
+                {i === 0 && (
+                  <span className="absolute bottom-3.5 left-3.5 bg-black/65 text-white rounded-full px-3.5 py-1 text-xs font-medium backdrop-blur-sm">
+                    Villa
+                  </span>
+                )}
               </motion.div>
             ))}
           </motion.div>

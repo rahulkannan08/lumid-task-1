@@ -9,7 +9,7 @@ import { Newsletter } from './Newsletter';
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-950 text-white">
+    <footer className="bg-[#111] text-white">
       <div className="container mx-auto px-6 py-16 max-w-screen-xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand + Newsletter */}
@@ -17,7 +17,7 @@ export function Footer() {
             <Link href="/" className="text-xl font-bold">
               {SITE_NAME}
             </Link>
-            <p className="text-sm text-neutral-400 leading-relaxed">
+            <p className="text-sm text-white/50 leading-relaxed">
               The #1 architecture firm in Texas turning dreams into beautiful,
               functional spaces.
             </p>
@@ -32,13 +32,13 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
           <span>{SITE_NAME}</span>
           <div className="flex gap-4">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">
+            <Link href="/privacy-policy" className="hover:text-[#F26227] transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="hover:text-white transition-colors">
+            <Link href="/terms" className="hover:text-[#F26227] transition-colors">
               Terms
             </Link>
           </div>

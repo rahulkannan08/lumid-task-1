@@ -19,7 +19,10 @@ export function AnimatedHeading({
     <motion.div variants={fadeInUp}>
       <Tag
         className={cn(
-          'text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-neutral-900',
+          'font-medium leading-[1.2] text-[#111]',
+          Tag === 'h1'
+            ? 'text-[clamp(40px,6vw,72px)] leading-[1.1]'
+            : 'text-[clamp(28px,4vw,44px)]',
           className
         )}
       >
