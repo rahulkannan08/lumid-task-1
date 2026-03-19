@@ -16,6 +16,7 @@ export const services: Service[] = [
       'BIM',
       'And more...',
     ],
+    image: 'https://framerusercontent.com/images/imeABNOsOCSUk6n4b2WTuE3zp50.jpg?scale-down-to=512',
   },
   {
     slug: 'interior-design-planning',
@@ -31,6 +32,7 @@ export const services: Service[] = [
       'Custom Cabinetry Design',
       'Interior Landscaping',
     ],
+    image: 'https://framerusercontent.com/images/fMSbO8GVSE2ZJSUpat0M0YqEZXE.jpg?scale-down-to=512',
   },
   {
     slug: 'consulting-services',
@@ -44,6 +46,7 @@ export const services: Service[] = [
       'Cost Estimation & Budgeting',
       'Project Feasibility Consulting',
     ],
+    image: 'https://framerusercontent.com/images/okjgNX8BS5v7AFv5fFXdy3mDRyM.jpg?scale-down-to=512',
   },
   {
     slug: 'project-management',
@@ -59,5 +62,6 @@ export const services: Service[] = [
       'Contractor & Vendor Management',
       'Final Inspection & Handover',
     ],
+    image: 'https://framerusercontent.com/images/yraagBdWgmITawheusqEXYqrtg.jpg',
   },
 ];

@@ -31,7 +31,7 @@ export function Services({ className }: SectionProps) {
             <div className="lg:sticky lg:top-[64px] lg:z-[1] bg-[#211f1a]">
               <SectionLabel text="Our Services" variant="dark" />
               <AnimatedHeading
-                text="Buildings aren't just brick and mortar—they're where life happens, and we make sure they're unforgettable."
+                text="Explore our services and see how we bring creativity and expertise to every project"
                 as="h2"
                 className="max-w-[800px] !text-[#fffbf5]"
               />

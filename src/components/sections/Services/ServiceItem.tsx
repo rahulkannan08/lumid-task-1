@@ -99,7 +99,7 @@ export function ServiceItem({ service, isOpen, onToggle }: ServiceItemProps) {
                 className="relative aspect-4/3 rounded-xl overflow-hidden"
               >
                 <Image
-                  src="https://framerusercontent.com/images/1bcyDuRfQDTRBuPmXk32I5cKWc0.webp?scale-down-to=512"
+                  src={service.image || 'https://framerusercontent.com/images/imeABNOsOCSUk6n4b2WTuE3zp50.jpg?scale-down-to=512'}
                   alt={service.title}
                   fill
                   className="object-cover"

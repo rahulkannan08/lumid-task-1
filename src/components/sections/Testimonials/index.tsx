@@ -13,22 +13,22 @@ const testimonialData = [
     quote: 'We came in with a Pinterest board full of ideas and left with the home of our dreams! The team made everything so easy, listening to every little detail and turning our scattered thoughts into something magical.',
     author: 'Orion Caldwell',
     title: 'Home Owner',
-    avatar: 'https://framerusercontent.com/images/bPmhZf6Cfqh0tq7ok2WiGtZUc.png?scale-down-to=64',
-    projectImage: 'https://framerusercontent.com/images/1bcyDuRfQDTRBuPmXk32I5cKWc0.webp?scale-down-to=1024',
+    avatar: 'https://framerusercontent.com/images/cjHuaZ2g1MnKCgmnEq0IpxBIU7Q.png',
+    projectImage: 'https://framerusercontent.com/images/c8yTRHwU0lDfYXWKVCoGbX7HJs.jpg?scale-down-to=512',
   },
   {
     quote: 'Working with this team transformed our office space into something truly inspiring. Every corner reflects our brand identity perfectly.',
     author: 'Elena Vasquez',
     title: 'CEO, TechVibe',
-    avatar: 'https://framerusercontent.com/images/zNwUrKf5wBzZ5mlqn3ZSHYTgQk.png?scale-down-to=64',
-    projectImage: 'https://framerusercontent.com/images/NPECM2ziENhHhdNoAT3unXgBhD0.jpg?scale-down-to=1024',
+    avatar: 'https://framerusercontent.com/images/6wohe4Mtd0vJm99l0f5QsIGb8hs.webp?scale-down-to=512',
+    projectImage: 'https://framerusercontent.com/images/c8yTRHwU0lDfYXWKVCoGbX7HJs.jpg?scale-down-to=512',
   },
   {
     quote: 'The attention to detail was remarkable. They thought of things we never would have considered and the final result exceeded our wildest expectations.',
     author: 'Marcus Chen',
     title: 'Property Developer',
-    avatar: 'https://framerusercontent.com/images/hTlOWGa5zyQTaf2BY6I2VyHfntk.png?scale-down-to=64',
-    projectImage: 'https://framerusercontent.com/images/T2Y0onUmpS5OqiyQ5nQDnrQnAkE.png?scale-down-to=1024',
+    avatar: 'https://framerusercontent.com/images/gTo1ikAe697E1wYiqy5siZAfKuc.png?scale-down-to=512',
+    projectImage: 'https://framerusercontent.com/images/c8yTRHwU0lDfYXWKVCoGbX7HJs.jpg?scale-down-to=512',
   },
 ];
 

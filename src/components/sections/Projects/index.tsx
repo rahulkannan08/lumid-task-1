@@ -25,7 +25,7 @@ export function Projects({ className }: SectionProps) {
           >
             <SectionLabel text="Our Best Projects" />
             <AnimatedHeading
-              text="From grand skyscrapers to cozy corners—see how we turn visions into spaces that wow!"
+              text="What we've been up to—check out our latest projects"
               as="h2"
               className="max-w-[800px]"
             />

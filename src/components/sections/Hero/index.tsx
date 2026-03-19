@@ -39,7 +39,7 @@ export function Hero({ className }: SectionProps) {
         {/* Sky background image (filtered) */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
-            src="https://framerusercontent.com/images/HlfKuKdWtdGiVMcHhQJCIKMD0Dg.jpg"
+            src="https://framerusercontent.com/images/Mm4vdpwIwDCj6RkdrL6NcBp3z0.webp?scale-down-to=512"
             alt="Sky background"
             fill
             className="object-cover"
@@ -64,12 +64,12 @@ export function Hero({ className }: SectionProps) {
             className="text-[40px] sm:text-[60px] lg:text-[85px] font-medium leading-[110%] sm:leading-[90%] tracking-[-2px] sm:tracking-[-0.07em] text-[#21201b] text-center max-w-[1000px]"
             style={{ textWrap: 'balance' }}
           >
-            We design more than buildings—we create space
+            Architecture that connects people and places
           </motion.h1>
 
-          <motion.div variants={fadeInUp} className="flex flex-col items-center gap-6 max-w-[400px]">
+          <motion.div variants={fadeInUp} className="flex flex-col items-center gap-6 max-w-[500px]">
             <p className="text-[15px] sm:text-[17px] text-[#21201b]/80 text-center leading-[140%] tracking-[-0.01em]">
-              That Foster Connection, Creativity, And Community.
+              We design more than buildings—we create spaces that foster connection, creativity, and community
             </p>
             <Link
               href="/contact-us"
@@ -90,7 +90,7 @@ export function Hero({ className }: SectionProps) {
           {/* Villa image */}
           <div className="absolute inset-0 z-[1] overflow-visible">
             <Image
-              src="https://framerusercontent.com/images/UUv7l47ZNLkfVJlShDHKiSF0LY.png"
+              src="https://framerusercontent.com/images/AfUELZk0dVk5hVjWkreKnPPhCw.jpg?scale-down-to=512"
               alt="Luxury villa exterior"
               fill
               className="object-cover"

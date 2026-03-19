@@ -36,8 +36,11 @@ export function Navbar() {
             </svg>
           </div>
           <div className="leading-none">
-            <span className="text-[15px] font-semibold tracking-[-0.02em] text-[#141414] block">
-              Architectured
+            <span className="text-[16px] font-bold tracking-[0.06em] text-[#141414] block uppercase">
+              ARCHITECT
+            </span>
+            <span className="text-[7px] font-medium tracking-[0.12em] text-[#141414]/60 block uppercase mt-[1px]">
+              Architecture Firm
             </span>
           </div>
         </Link>

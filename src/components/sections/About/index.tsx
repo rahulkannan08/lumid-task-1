@@ -28,7 +28,7 @@ export function About({ className }: SectionProps) {
               {/* Video thumbnail with play button */}
               <div className="relative overflow-hidden rounded-lg" style={{ aspectRatio: '1.88383' }}>
                 <Image
-                  src="https://framerusercontent.com/images/bPmhZf6Cfqh0tq7ok2WiGtZUc.png?scale-down-to=1024"
+                  src="https://framerusercontent.com/images/NPECM2ziENhHhdNoAT3unXgBhD0.jpg?scale-down-to=1024"
                   alt="Architecture sketch illustration"
                   fill
                   className="object-cover"

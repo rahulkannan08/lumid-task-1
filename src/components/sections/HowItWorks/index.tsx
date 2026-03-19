@@ -16,14 +16,14 @@ function StepButton({ step, isActive, onClick }: { step: number; isActive: boole
       type="button"
       onClick={onClick}
       className={cn(
-        'flex items-center gap-2 px-4 py-2 rounded-full text-[13px] font-medium transition-all duration-300 whitespace-nowrap',
+        'flex items-center gap-1.5 px-4 py-2.5 rounded-[8px] text-[13px] font-medium transition-all duration-300 whitespace-nowrap border',
         isActive
-          ? 'bg-[#141414] text-[#fffbf5]'
-          : 'bg-transparent text-[#21201b]/50 hover:text-[#21201b]'
+          ? 'bg-[#141414] text-[#fffbf5] border-[#141414]'
+          : 'bg-transparent text-[#21201b]/50 border-[#21201b]/15 hover:text-[#21201b] hover:border-[#21201b]/30'
       )}
     >
-      <span className="text-[10px] uppercase tracking-[0.08em]">Step</span>
-      <span>{String(step).padStart(2, '0')}</span>
+      {isActive && <span className="text-[11px] uppercase tracking-[0.06em]">Step</span>}
+      <span>{isActive ? ` ${step}` : step}</span>
     </button>
   );
 }
@@ -106,34 +106,36 @@ export function HowItWorks({ className }: SectionProps) {
                 ref={(el) => { stepRefs.current[i] = el; }}
                 className="scroll-mt-[128px]"
               >
-                <div className="flex flex-col gap-6">
-                  {/* Step image */}
-                  <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: '1.4' }}>
+              <div className="flex flex-col gap-4">
+                  {/* Step image with overlay */}
+                  <div className="relative rounded-xl overflow-hidden" style={{ aspectRatio: '1.4' }}>
                     <Image
                       src={step.image}
                       alt={step.title}
                       fill
                       className="object-cover"
                     />
+                    {/* Step info overlay at bottom of image */}
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent px-6 pb-5 pt-12">
+                      <div className="flex items-end gap-3">
+                        <span className="text-[10px] font-medium text-white/60 uppercase tracking-[0.08em] mb-1">
+                          STEP
+                        </span>
+                        <span className="text-[42px] font-semibold text-white tracking-[-1px] leading-none">
+                          {String(step.step).padStart(2, '0')}
+                        </span>
+                        <div className="flex-1 h-px bg-white/20 mb-3 ml-3" />
+                        <span className="text-[16px] font-medium text-white tracking-[-0.02em] mb-1">
+                          {step.title}
+                        </span>
+                      </div>
+                    </div>
                   </div>
                   
-                  {/* Step info card */}
-                  <div className="bg-[#fffbf5] rounded-lg p-6 shadow-[0_1px_25px_rgba(20,20,20,0.08)]">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="text-[10px] font-medium text-[#888] uppercase tracking-[0.08em]">
-                        STEP
-                      </span>
-                      <span className="text-[32px] font-semibold text-[#21201b] tracking-[-1px]">
-                        {String(step.step).padStart(2, '0')}
-                      </span>
-                    </div>
-                    <h3 className="text-[20px] font-medium text-[#21201b] tracking-[-0.03em] mb-3">
-                      {step.title}
-                    </h3>
-                    <p className="text-[14px] text-[#21201b]/50 leading-[170%]">
-                      {step.description}
-                    </p>
-                  </div>
+                  {/* Step description below image */}
+                  <p className="text-[14px] text-[#21201b]/50 leading-[170%]">
+                    {step.description}
+                  </p>
                 </div>
               </div>
             ))}

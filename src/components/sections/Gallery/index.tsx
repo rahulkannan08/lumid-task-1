@@ -35,7 +35,7 @@ export function Gallery({ className }: SectionProps) {
             </div>
 
             <AnimatedHeading
-              text="Don't just take our word for it—see how we turn ideas into stunning spaces."
+              text="Don't just take our word for it—see how we turn ideas into stunning spaces. Our gallery is full of inspiration for your next big project!"
               as="h2"
               className="max-w-[800px] mb-12"
             />

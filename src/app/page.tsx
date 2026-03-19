@@ -13,6 +13,9 @@ const About = dynamic(() =>
 const Differentiators = dynamic(() =>
   import('@/components/sections/Differentiators').then((m) => m)
 );
+const Testimonials = dynamic(() =>
+  import('@/components/sections/Testimonials').then((m) => m)
+);
 const HowItWorks = dynamic(() =>
   import('@/components/sections/HowItWorks').then((m) => m)
 );
@@ -34,6 +37,7 @@ export default function HomePage() {
       <Projects />
       <About />
       <Differentiators />
+      <Testimonials />
       <HowItWorks />
       <Gallery />
       <Blogs />
