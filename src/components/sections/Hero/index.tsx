@@ -102,12 +102,12 @@ export function Hero({ className }: SectionProps) {
         {/* Stats bar — overlaid at bottom of hero */}
         <div className="relative z-[2] w-full flex justify-center" style={{ padding: '0 var(--container-px, 50px)', marginTop: '-80px' }}>
           <div className="flex w-full items-center gap-2.5" style={{ maxWidth: 'var(--max-width, 1820px)' }}>
-            {stats.map((stat, i) => (
+            {stats.map((stat) => (
               <StatCard
                 key={stat.label}
                 label={stat.label}
-                value={typeof stat.value === 'string' ? parseInt(stat.value) : stat.value}
-                suffix={stat.suffix || (typeof stat.value === 'string' && stat.value.includes('+') ? '+' : '')}
+                value={stat.value}
+                suffix={stat.suffix}
               />
             ))}
           </div>
