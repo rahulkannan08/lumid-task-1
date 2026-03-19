@@ -1,37 +1,55 @@
-/* ── Color Tokens ─────────────────────────────── */
+/* ── Color Tokens (matched from reference site) ── */
 :root {
-  --color-bg: #FAF8F4;
-  --color-bg-alt: #FAF8F4;
-  --color-bg-dark: #1a1a1a;
+  --color-bg: #fffbf5;
+  --color-bg-alt: #f7f2e9;
+  --color-bg-dark: #211f1a;
 
-  --color-text-primary: #111111;
+  --color-text-primary: #21201b;
   --color-text-secondary: #444444;
   --color-text-muted: #888888;
   --color-text-inverse: #ffffff;
 
-  --color-border: rgba(0, 0, 0, 0.08);
-  --color-border-strong: #111111;
+  --color-border: rgba(20, 20, 20, 0.1);
+  --color-border-strong: #21201b;
   --color-border-cream: #e5e0d8;
-  --color-border-dark: rgba(255, 255, 255, 0.08);
+  --color-border-dark: rgba(255, 255, 255, 0.1);
 
-  --color-accent: #F26227;
-  --color-accent-hover: #d9551f;
+  --color-accent: #ff833b;
+  --color-accent-hover: #e0702e;
   --color-accent-light: #FFF0E8;
   --color-accent-dark: #C44209;
 
-  --color-black: #111111;
-  --color-dark-bg: #1E1E1E;
+  --color-black: #141414;
+  --color-dark-bg: #211f1a;
   --color-dark-card: #252520;
-  --color-page-bg: #FAF8F4;
-  --color-white: #FFFFFF;
+  --color-page-bg: #fffbf5;
+  --color-white: #fffbf5;
 
   /* ── Font Tokens ─────────────────────────────── */
-  --font-primary: 'DM Sans', sans-serif;
+  --font-primary: 'Inter', sans-serif;
   --font-mono: 'Fragment Mono', 'Geist Mono', monospace;
   --font-handwriting: 'Homemade Apple', cursive;
 
   /* ── Spacing ─────────────────────────────────── */
-  --section-py: 6rem;
-  --container-px: 1.5rem;
-  --max-width: 80rem;
+  --section-py: 100px;
+  --container-px: 50px;
+  --max-width: 1820px;
+
+  /* ── Navbar ──────────────────────────────────── */
+  --navbar-height: 64px;
+}
+
+/* Tablet */
+@media (max-width: 1199px) {
+  :root {
+    --container-px: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 809px) {
+  :root {
+    --section-py: 50px;
+    --container-px: 20px;
+  }
 }

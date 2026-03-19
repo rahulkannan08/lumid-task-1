@@ -18,13 +18,13 @@ export function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         className="flex w-full items-center justify-between py-5 text-left group"
         aria-expanded={isOpen}
       >
-        <span className="text-[15px] font-medium text-[#111] pr-4">
+        <span className="text-[15px] font-medium text-[#21201b] pr-4">
           {question}
         </span>
         <motion.span
           animate={{ rotate: isOpen ? 45 : 0 }}
           transition={{ duration: 0.3, ease: 'easeOut' }}
-          className="shrink-0 text-xl text-[#F26227] ml-4 select-none"
+          className="shrink-0 text-xl text-[#ff833b] ml-4 select-none"
         >
           +
         </motion.span>

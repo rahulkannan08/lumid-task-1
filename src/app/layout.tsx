@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingContact } from "@/components/sections/FloatingContact";
+import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Architectured - Architecture Firm",
+  title: "Architectured - Architecture Firm Framer Template",
   description:
-    "We design more than buildings—we create spaces that foster connection, creativity, and community.",
+    "Best Architecture Framer Template for architects, interior designers, landscapers, builders, developers, real estate agencies",
   icons: {
     icon: "https://framerusercontent.com/images/J7bap8NdUKR5LPjM0C1TEZmg8.png",
   },
@@ -27,11 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} antialiased`} style={{ fontFamily: "'DM Sans', sans-serif" }}>
-        <Navbar />
-        {children}
-        <Footer />
-        <FloatingContact />
+      <body
+        className={`${inter.variable} antialiased`}
+        style={{ fontFamily: "'Inter', sans-serif" }}
+      >
+        <SmoothScrollProvider>
+          <Navbar />
+          {children}
+          <Footer />
+          <FloatingContact />
+        </SmoothScrollProvider>
       </body>
     </html>
   );
