@@ -16,7 +16,7 @@ export const services: Service[] = [
       'BIM',
       'And more...',
     ],
-    image: 'https://framerusercontent.com/images/imeABNOsOCSUk6n4b2WTuE3zp50.jpg?scale-down-to=512',
+    image: '/images/6wohe4Mtd0vJm99l0f5QsIGb8hs_scale-down-to=512.webp',
   },
   {
     slug: 'interior-design-planning',
@@ -32,7 +32,7 @@ export const services: Service[] = [
       'Custom Cabinetry Design',
       'Interior Landscaping',
     ],
-    image: 'https://framerusercontent.com/images/fMSbO8GVSE2ZJSUpat0M0YqEZXE.jpg?scale-down-to=512',
+    image: '/images/Mm4vdpwIwDCj6RkdrL6NcBp3z0_scale-down-to=512.webp',
   },
   {
     slug: 'consulting-services',
@@ -46,7 +46,7 @@ export const services: Service[] = [
       'Cost Estimation & Budgeting',
       'Project Feasibility Consulting',
     ],
-    image: 'https://framerusercontent.com/images/okjgNX8BS5v7AFv5fFXdy3mDRyM.jpg?scale-down-to=512',
+    image: '/images/AfUELZk0dVk5hVjWkreKnPPhCw_scale-down-to=512.jpg',
   },
   {
     slug: 'project-management',
@@ -62,6 +62,6 @@ export const services: Service[] = [
       'Contractor & Vendor Management',
       'Final Inspection & Handover',
     ],
-    image: 'https://framerusercontent.com/images/yraagBdWgmITawheusqEXYqrtg.jpg',
+    image: '/images/c8yTRHwU0lDfYXWKVCoGbX7HJs_scale-down-to=512.jpg',
   },
 ];

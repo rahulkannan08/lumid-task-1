@@ -28,7 +28,7 @@ export function About({ className }: SectionProps) {
               {/* Video thumbnail with play button */}
               <div className="relative overflow-hidden rounded-lg" style={{ aspectRatio: '1.88383' }}>
                 <Image
-                  src="https://framerusercontent.com/images/NPECM2ziENhHhdNoAT3unXgBhD0.jpg?scale-down-to=1024"
+                  src="/images/bPmhZf6Cfqh0tq7ok2WiGtZUc_scale-down-to=1024.png"
                   alt="Architecture sketch illustration"
                   fill
                   className="object-cover"
@@ -51,13 +51,13 @@ export function About({ className }: SectionProps) {
               </p>
             </motion.div>
 
-            {/* Right side — Story text + CTA */}
+            {/* Right side — Story text + CTA + Image */}
             <motion.div variants={fadeInRight} className="flex flex-col gap-10 flex-1 max-w-[500px]">
               <h2 className="text-[28px] lg:text-[36px] font-medium tracking-[-2px] leading-[110%] text-[#21201b]" style={{ textWrap: 'balance' }}>
                 Our journey began 15 years ago, with a simple idea: to design spaces that blend beauty and functionality seamlessly.
               </h2>
               <p className="text-[15px] text-[#21201b]/60 leading-[170%]">
-                What started as a small team with big dreams has grown into a thriving studio, known for turning ideas into reality.
+                What started as a small team with big dreams has grown into a thriving studio, known for turning ideas into reality. Along the way, we've collaborated with incredible clients, tackled exciting challenges, and built spaces we're truly proud of.
               </p>
               <div>
                 <Link
@@ -69,6 +69,15 @@ export function About({ className }: SectionProps) {
                   </span>
                   <span className="px-4 py-2">Know About Us</span>
                 </Link>
+              </div>
+              {/* Man with model buildings image */}
+              <div className="relative overflow-hidden rounded-lg mt-4" style={{ aspectRatio: '1.5' }}>
+                <Image
+                  src="/images/zNwUrKf5wBzZ5mlqn3ZSHYTgQk_scale-down-to=1024.png"
+                  alt="A man with some model buildings"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </motion.div>
           </motion.div>

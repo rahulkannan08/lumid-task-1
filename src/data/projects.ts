@@ -9,8 +9,7 @@ export const projects: Project[] = [
     location: 'Central Business District',
     year: '2022',
     size: '350,000 sq. ft.',
-    image:
-      'https://framerusercontent.com/images/dMov8IrQJp1A5wQJpPbD2iSu0M.webp?scale-down-to=2048',
+    image: '/images/dMov8IrQJp1A5wQJpPbD2iSu0M_scale-down-to=2048.webp',
   },
   {
     slug: 'the-sunny-haven-residence-copy',
@@ -20,8 +19,7 @@ export const projects: Project[] = [
     location: 'Savannah, Georgia',
     year: '2023',
     size: '4000sqft',
-    image:
-      'https://framerusercontent.com/images/28JPWa7K4smsQTRxeG9AwpZzl8.webp?scale-down-to=2048',
+    image: '/images/28JPWa7K4smsQTRxeG9AwpZzl8_scale-down-to=2048.webp',
   },
   {
     slug: 'celestial-towers-condominiums',
@@ -31,7 +29,6 @@ export const projects: Project[] = [
     location: 'New Orleans, Louisiana',
     year: '2024',
     size: '300,000 sq. ft.',
-    image:
-      'https://framerusercontent.com/images/IjGNDVkEAbAhpxd8VU8yRt7KGM.webp?scale-down-to=2048',
+    image: '/images/IjGNDVkEAbAhpxd8VU8yRt7KGM_scale-down-to=2048.webp',
   },
 ];

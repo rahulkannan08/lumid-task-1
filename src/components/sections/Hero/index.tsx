@@ -36,14 +36,13 @@ export function Hero({ className }: SectionProps) {
     <section ref={ref} className={cn('relative w-full overflow-hidden', className)}>
       {/* Background image wrapper — full width, tall container */}
       <div className="relative w-full flex flex-col items-center" style={{ paddingTop: '170px' }}>
-        {/* Sky background image (filtered) */}
+        {/* Sky background image */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <Image
-            src="https://framerusercontent.com/images/Mm4vdpwIwDCj6RkdrL6NcBp3z0.webp?scale-down-to=512"
+            src="/images/cKdwx0TQxw7MKiUKihFL5Qif0M_scale-down-to=1024.webp"
             alt="Sky background"
             fill
             className="object-cover"
-            style={{ filter: 'brightness(1.1) grayscale(0.7)', mixBlendMode: 'multiply' }}
             priority
           />
         </div>
@@ -90,7 +89,7 @@ export function Hero({ className }: SectionProps) {
           {/* Villa image */}
           <div className="absolute inset-0 z-[1] overflow-visible">
             <Image
-              src="https://framerusercontent.com/images/AfUELZk0dVk5hVjWkreKnPPhCw.jpg?scale-down-to=512"
+              src="/images/1bcyDuRfQDTRBuPmXk32I5cKWc0_scale-down-to=1024.webp"
               alt="Luxury villa exterior"
               fill
               className="object-cover"

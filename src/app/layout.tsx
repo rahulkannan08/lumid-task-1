@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Best Architecture Framer Template for architects, interior designers, landscapers, builders, developers, real estate agencies",
   icons: {
-    icon: "https://framerusercontent.com/images/J7bap8NdUKR5LPjM0C1TEZmg8.png",
+    icon: "/images/J7bap8NdUKR5LPjM0C1TEZmg8.png",
   },
 };
 

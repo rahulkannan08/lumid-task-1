@@ -33,7 +33,7 @@ export function HeroText() {
       <motion.div variants={scaleIn} className="relative">
         <div className="relative aspect-4/3 rounded-2xl overflow-hidden">
           <Image
-            src="https://framerusercontent.com/images/1bcyDuRfQDTRBuPmXk32I5cKWc0.webp?scale-down-to=1024"
+            src="/images/1bcyDuRfQDTRBuPmXk32I5cKWc0_scale-down-to=1024.webp"
             alt="Hero Image — A Beautiful Villa"
             fill
             priority
@@ -43,7 +43,7 @@ export function HeroText() {
         {/* Cloud ambient element */}
         <div className="absolute -top-10 -right-10 w-48 h-48 opacity-30 animate-float">
           <Image
-            src="https://framerusercontent.com/images/cjHuaZ2g1MnKCgmnEq0IpxBIU7Q.png"
+            src="/images/cjHuaZ2g1MnKCgmnEq0IpxBIU7Q.png"
             alt="Cloud"
             fill
             className="object-contain"

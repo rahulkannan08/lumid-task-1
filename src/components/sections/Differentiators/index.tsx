@@ -24,7 +24,7 @@ export function Differentiators({ className }: SectionProps) {
         {/* Left: Sticky background image */}
         <div className="relative w-full lg:w-[55%] lg:sticky lg:top-0 lg:h-screen overflow-hidden">
           <Image
-            src="https://framerusercontent.com/images/T2Y0onUmpS5OqiyQ5nQDnrQnAkE.png?scale-down-to=1024"
+            src="/images/zNwUrKf5wBzZ5mlqn3ZSHYTgQk_scale-down-to=1024.png"
             alt="Architect working on model"
             fill
             className="object-cover"
